@@ -70,7 +70,7 @@ for(q in 1:nrow(GROUP)){
   #The distances should be metric and Euclidean (If not enforce them)
   is.symmetric.matrix(D)#Our distances are symmetric
   
-  #If they were not, to make them symetric use the following line
+  #If they were not, to make them symmetric use the following line
   # D <- 1/2 *(D + t(D))
   
   tri.ineq(D)#FALSE
