@@ -138,7 +138,7 @@ for(q in 1:nrow(GROUP)){
   #Embeded points
   Y = t(V_EVD %*% DeltaSQRT)
   
-  str(Y)#Ceck dimensionality reduction
+  str(Y)#Check dimensionality reduction
   #########Embedding of break-in set is done ##############################
   #########################################################
   
@@ -216,10 +216,10 @@ for(q in 1:nrow(GROUP)){
   }
   ###
   A_r <- t(U)
-  A_r = A_r[1:length(DofSVD),]#Rigid affine trasformation
+  A_r = A_r[1:length(DofSVD),]#Rigid affine transformation
   
   Xr <- A_r %*% X 
-  str(Xr)##num [1:386, 1:405] 
+  str(Xr)# 
   ######################################
   #Non-rigid affine approximation
   #Find A-nr
@@ -245,7 +245,7 @@ for(q in 1:nrow(GROUP)){
   #BGM was used to calculate them.
   load("~/DV_ESRIDvsESRID_cidn_0.4_cide_0.4.Rdata")
   
-  #Select the target from one of each 46 gropups
+  #Select the target from one of each 46 groups
   #Then take out the target and other samples from its class from D
   ###########################
   
